@@ -27,30 +27,109 @@
   color: white;
   height: 100%;
 }
-
+/*
 .navbar-button {
-  /* padding: 0 1rem;  */
   align-items: center;
   gap: 2rem;
-  color: white; /* Couleur du texte */
-  background-color: #17CDB2; /* Couleur de fond transparente */
-  border: none; /* Supprime la bordure */
+  color: white; 
+  background-color: #07937C; 
+  border: none; 
   height: 100%;
 }
 
 .navbar-button:hover,
 .navbar-button:focus {
-  background-color: #17CDB2; /* Couleur de fond au survol ou au focus */
-}
+  background-color: #FBE9BC; 
+}+
 
 .navbar-button.active {
-  background-color: #7D0C0C; /* Couleur de fond lorsqu'il est actif (clic) */
+  background-color: #7D0C0C; 
 }
+
+*/
+
+
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #00AE92;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: 0C917C;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.button-3:hover {
+background-color: #00AE92;
+
+}
+
+.button-3:active {
+  background-color: #14caac;
+  
+  }
+
+/* .button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #00AE92;
+}
+
+.button-3:focus {
+  box-shadow: #00AE92;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #00AE92;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+ */
+
 img{
   width: 15%;
   height: 10%;
 }
 
+
+
+
 .home{
   color: white;
+  font-size: 30px;
+  font-family: Arial;
 }
+
+.home:hover{
+  color: white;
+
+}
+
