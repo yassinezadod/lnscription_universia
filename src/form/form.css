@@ -1,0 +1,88 @@
+/* Styles pour le titre */
+h3 {
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(36, 220, 36);
+    background-color: rgb(71, 248, 71);
+    color: white;
+    text-align: center;
+    margin-right: 90px;
+    margin-left: 60px;
+  }
+  
+  /* Styles pour le formulaire */
+  .frm {
+    padding: 20px;
+    border: 3px solid rgb(36, 220, 36);
+    margin-right: 90px;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: rgb(251, 253, 253);
+  }
+  
+  /* Styles pour les champs de saisie textuelle */
+  input[type=text], select, input[type=date], input[type=email], .phone {
+    width: calc(50% - 12px);
+    padding: 10px;
+    margin: 10px 6px;
+    box-sizing: border-box;
+    border: 2px solid rgb(77, 237, 28);
+    border-radius: 4px;
+  }
+  
+  /* Styles spécifiques pour les champs de saisie "prenom" et "nom" */
+  input[type=text]#prenom, input[type=text]#nom {
+    /* Ajoutez des styles supplémentaires si nécessaire */
+  }
+  
+  /* Styles pour les options du menu déroulant */
+  select option {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Styles pour le menu déroulant lorsqu'il est en focus */
+  select:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  /* Styles pour le composant PhoneInput */
+  .phone:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  /* Styles pour le champ de date de naissance */
+  input[type=date], input[type=email] {
+    /* Ajoutez des styles supplémentaires si nécessaire */
+  }
+
+  /* Styles pour la case à cocher */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 850px;
+  }
+  
+  input[type=checkbox] {
+    margin-right: 5px;
+  }
+  
+
+  /* Styles pour le bouton "Valider" */
+.btnValider {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style lorsque le curseur survole le bouton */
+  .btnValider:hover {
+    background-color: darkgreen;
+  }
+  
+  
