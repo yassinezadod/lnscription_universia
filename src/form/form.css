@@ -1,88 +1,97 @@
-/* Styles pour le titre */
 h3 {
     border-style: solid;
     border-width: medium;
-    border-color: rgb(36, 220, 36);
-    background-color: rgb(71, 248, 71);
+    border-color: #00AE92;
+    background-color: #00AE92;
     color: white;
     text-align: center;
-    margin-right: 90px;
-    margin-left: 60px;
+    margin-right: 8%;
+    margin-left: 8%;
   }
-  
-  /* Styles pour le formulaire */
-  .frm {
+  .Container {
+    display: flex;
+  }
+  form {
     padding: 20px;
-    border: 3px solid rgb(36, 220, 36);
-    margin-right: 90px;
-    margin-left: 60px;
-    margin-top: 20px;
+    border: 3px solid #00AE92;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: -10px;
+    margin-bottom: 50px;
     background-color: rgb(251, 253, 253);
+    gap: 10px;
+    flex-direction: row;
   }
   
-  /* Styles pour les champs de saisie textuelle */
-  input[type=text], select, input[type=date], input[type=email], .phone {
-    width: calc(50% - 12px);
+  .formInput{
+    width: calc(90% - 12px);
     padding: 10px;
-    margin: 10px 6px;
     box-sizing: border-box;
-    border: 2px solid rgb(77, 237, 28);
+    border: 2px solid #00AE92;
     border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(251, 253, 253);  
   }
   
-  /* Styles spécifiques pour les champs de saisie "prenom" et "nom" */
-  input[type=text]#prenom, input[type=text]#nom {
-    /* Ajoutez des styles supplémentaires si nécessaire */
-  }
-  
-  /* Styles pour les options du menu déroulant */
-  select option {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  /* Styles pour le menu déroulant lorsqu'il est en focus */
-  select:focus {
-    border-color: blue;
-    outline: none;
-  }
-  
-  /* Styles pour le composant PhoneInput */
   .phone:focus {
-    border-color: blue;
+    border-color: #018a73;
     outline: none;
   }
-  
-  /* Styles pour le champ de date de naissance */
-  input[type=date], input[type=email] {
-    /* Ajoutez des styles supplémentaires si nécessaire */
-  }
 
-  /* Styles pour la case à cocher */
+
 label {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    margin-left: 850px;
+    margin-left: 5%;
   }
-  
-  input[type=checkbox] {
-    margin-right: 5px;
-  }
-  
+.button{
+  background-color: #15a18c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: #018a73;
+  position: center;
+  margin-top: 8px;
+  border-radius: 5px;
 
-  /* Styles pour le bouton "Valider" */
-.btnValider {
-    background-color: green;
+}
+button{
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border:#018a73;
   }
   
-  /* Style lorsque le curseur survole le bouton */
-  .btnValider:hover {
-    background-color: darkgreen;
+button:hover {
+    background-color: #5cb9aa;
   }
+
+ 
+  .box-1 {
+    height:650px;
+    flex: 1;
+  
+  }  
+  .box-2 {
+    flex: 1;
+    height:600px;
+
+  }
+  @media (max-width: 400px) {
+  .Container {
+    flex-direction: column;
+  }
+  }
+  p {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
   
   
