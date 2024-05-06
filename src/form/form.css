@@ -11,7 +11,7 @@ h3 {
   .Container {
     display: flex;
   }
-  form {
+  .form {
     padding: 20px;
     border: 3px solid #00AE92;
     margin-right: 8%;
@@ -49,6 +49,7 @@ label {
   }
 .button{
   background-color: #15a18c;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -59,15 +60,14 @@ label {
   border-radius: 5px;
 
 }
-button{
-    color: white;
-    border:#018a73;
-  }
   
-button:hover {
+.button:hover {
     background-color: #5cb9aa;
   }
 
+  .button:active{
+    color: white;
+  }
  
   .box-1 {
     height:650px;

@@ -1,16 +1,26 @@
 import { useState } from 'react'
-import Navbar from "./components/navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Suivi from './components/suivi';
 import Formulaire from './form/formulaire';
-import "./App.css"
+import Demande from './components/demande';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="app">
-      <Navbar/><br /><br />
-      <Formulaire/>
+    // <div className="app">
+    // <Navbar/><br /><br />
+    //   <Formulaire/>
       
-    </div>
+    // </div>
+
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" Component={Formulaire} />
+      <Route path="/suivi" Component={Suivi} />
+      <Route path="/demande" Component={Demande} />
+    </Routes>
+    </BrowserRouter>
     
     
   )

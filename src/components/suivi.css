@@ -1,0 +1,26 @@
+.form {
+    padding: 20px;
+    border: 3px solid #00AE92;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    background-color: rgb(251, 253, 253);
+    gap: 10px;
+    flex-direction: row;
+  }
+  
+  .input{
+    width: calc(90% - 12px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #00AE92;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(251, 253, 253);  
+  }
+
+  
+  

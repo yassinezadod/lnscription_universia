@@ -1,0 +1,24 @@
+/* Style pour le logo de la barre de navigation */
+.navbar-logo {
+    height: 40px; /* Ajustez selon vos besoins */
+  }
+  
+  /* Style pour le Dropdown.Toggle circulaire */
+  .circle-toggle {
+    height: 40px; /* Hauteur et largeur égales pour un cercle parfait */
+    width: 40px;
+    border-radius: 50%; /* Pour obtenir un bouton circulaire */
+    background-color: #f0f0f0; /* Couleur de fond pour le bouton */
+    border: 1px solid #ccc; /* Bord pour le bouton */
+    display: flex;
+    padding: 0; /* Éliminer le padding supplémentaire */
+  }
+  
+  /* Style pour l'image de profil */
+  .profile-image {
+    height: 30px; /* Taille de l'image à l'intérieur du Toggle */
+    width: 30px;
+    border-radius: 50%; /* Pour que l'image soit circulaire */
+    object-fit: cover; /* Pour que l'image s'adapte bien au conteneur */
+  }
+  

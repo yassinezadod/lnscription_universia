@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import "./form.css";
-
+import Navbar from "../components/navbar";
+import Suivi from '../components/suivi';
+import { Link } from 'react-router-dom';
 
 interface FormulaireProps {
  
@@ -43,12 +45,17 @@ export class Formulaire extends Component<FormulaireProps, FormulaireState> {
     Formulaire.push('/suivi');
 
   }
-
+  handleClick = () => {
+    console.log(Suivi);
+  };
 
 
   render() {
     const { telephone, noEmail, conditionsAccepted } = this.state;
     return (
+      <div className="app">
+        <Navbar />
+        <br /><br />
       <div>
         <h3>Vos informations personnelles</h3>
         <div className='form'>
@@ -90,11 +97,11 @@ export class Formulaire extends Component<FormulaireProps, FormulaireState> {
                   <div className='box-2'>
                     <div>
                       <label>الاسم</label>
-                      <input className='formInput' pattern= "/^[\u0600-\u06FF\s]+$/" type='text' name='arabicFirstName'  placeholder='entrer votre prenom en arabe'  required/>
+                      <input className='formInput' pattern= "^[A-Za-z]{3,50}$" type='text' name='arabicFirstName'  placeholder='entrer votre prenom en arabe'  required/>
                     </div>
                     <div>
                       <label>النسب</label>
-                      <input className='formInput' pattern= "/^[\u0600-\u06FF\s]+$/" type='text' name='arabicLastName'  placeholder='entrer votre nom en arabe'  required/>
+                      <input className='formInput' /* type='text' name='arabicLastName'*/  placeholder='entrer votre nom en arabe'  required/>
                     </div>
                     <div>
                       <label>Ville</label>
@@ -102,7 +109,7 @@ export class Formulaire extends Component<FormulaireProps, FormulaireState> {
                     </div>
                     <div>
                       <label>مكان الازدياد</label>
-                      <input className='formInput' pattern= "/^[\u0600-\u06FF\s]+$/" type='text' name='arabicBirthPlace'  placeholder='entrer le lieu de naissance en arabe' required/>
+                      <input className='formInput' /*pattern= "/^[\u0600-\u06FF\s]+$/"*/ type='text' name='arabicBirthPlace'  placeholder='entrer le lieu de naissance en arabe' required/>
                     </div>
                     <label>GSM</label>
                     <PhoneInput
@@ -128,9 +135,10 @@ export class Formulaire extends Component<FormulaireProps, FormulaireState> {
                     </label>
                   </div>
                 </div>
-              <center><button onClick={this.handleValidation} className='button' type='submit'>Submit</button></center>
+              <center><Link to="/suivi" onClick={this.handleClick}  className='button' type='submit'>Submit</Link></center>
             </form>
           </div>
+      </div>
       </div>
     );
   }
