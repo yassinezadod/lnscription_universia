@@ -4,6 +4,8 @@ import "./App.css";
 import Suivi from './components/suivi';
 import Formulaire from './form/formulaire';
 import Demande from './components/demande';
+import Formdepot from './components/Formdepot';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +21,7 @@ function App() {
       <Route path="/" Component={Formulaire} />
       <Route path="/suivi" Component={Suivi} />
       <Route path="/demande" Component={Demande} />
+      <Route path="/depot" Component={Formdepot} />
     </Routes>
     </BrowserRouter>
     

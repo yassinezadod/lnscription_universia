@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import { Stepper, Step, StepLabel, Container, Button, TextField, Typography, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import Navbarprofile from './navbarprofile';
+import Formdepot from './Formdepot';
 
 
 enum StepType {
@@ -59,10 +60,7 @@ const Demande = () => {
     switch (step) {
       case 0:
         return (
-          <div>
-            <TextField label="Nom" fullWidth />
-            <TextField label="Adresse" fullWidth />
-          </div>
+          <Formdepot />
         );
       case 1:
         return (
